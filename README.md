@@ -1,5 +1,5 @@
-# Marco Polimeni Portfolio Site
+# Marco Polimeni Personal Site
 
 ## Introduction
 
-My personal portfolio website along with the documentation that went into its creation.
+My personal website along with the documentation that went into its creation.

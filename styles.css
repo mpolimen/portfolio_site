@@ -24,8 +24,14 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  
 }
 
 .contact-info li{
+  mix-blend-mode: hard-light;
   list-style: none;
+}
+
+.contact-info li:hover{
+  mix-blend-mode: normal;
 }
