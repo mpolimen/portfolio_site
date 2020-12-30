@@ -10,6 +10,10 @@ body{
   background-size: cover;
 }
 
+.introduction{
+  position: relative;
+}
+
 .intro-box{
   margin-top: 10%;
   margin-left: 25%;
@@ -17,21 +21,32 @@ body{
 
 /* Contact */
 
-.contact-info{
-  max-width: 500px;
-  margin-left: 43%;
+.contacts{
+  position: absolute;
+  margin-left: 50%;
   margin-top: -6%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  
 }
 
 .contact-info li{
+  display: inline;
+  padding-left: 15px;
   mix-blend-mode: hard-light;
   list-style: none;
 }
 
 .contact-info li:hover{
   mix-blend-mode: normal;
+}
+
+/* Screen Adjustment */
+@media only screen and (min-device-width: 999px){
+  /*  */
+}
+
+@media only screen and (min-device-width: 499px) and (max-device-width: 998px){
+  /*  */
+}
+
+@media only screen and (max-device-width: 498px){
+  /*  */
 }
