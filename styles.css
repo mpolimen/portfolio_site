@@ -47,6 +47,10 @@ body{
   /*  */
 }
 
-@media only screen and (max-device-width: 498px){
-  /*  */
+@media only screen and (max-device-width: 3000px){
+  .contacts{
+    position: absolute;
+    margin-left: 47%;
+    margin-top: -6%;
+  }
 }
