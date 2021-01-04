@@ -5,37 +5,71 @@
 
 body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background: url(images/backgrounds/plants_on_deck.jpg) no-repeat;
+  background: url(images/backgrounds/night_stars.jfif) no-repeat;
   background-attachment: fixed;  
   background-size: cover;
 }
 
 .introduction{
+  margin-top: 7.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   position: relative;
 }
 
-.intro-box{
-  margin-top: 10%;
-  margin-left: 25%;
+.intro_box{
+  content: url(images/figma_exports/intro_bw.svg);
 }
 
-/* Contact */
+.intro_box:hover{
+  content: url(images/figma_exports/intro_color.svg);
+}
+
+.me{
+  position: absolute;
+  left: 0.2rem;
+  top: -0.1rem;
+  mix-blend-mode: luminosity;
+}
+
+.me:hover{
+  mix-blend-mode: normal;
+}
 
 .contacts{
   position: absolute;
-  margin-left: 50%;
-  margin-top: -6%;
+  left: 25rem;
+  bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.contact-info li{
-  display: inline;
-  padding-left: 15px;
-  mix-blend-mode: hard-light;
-  list-style: none;
+.fa-linkedin{
+  color: white;
 }
 
-.contact-info li:hover{
-  mix-blend-mode: normal;
+.fa-linkedin:hover{
+  color: #2867B2;
+}
+
+.fa-github{
+  color: white;
+  padding-left: 2rem;
+}
+
+.fa-github:hover{
+  color: #FF9900;
+}
+
+.fa-envelope{
+  color: white;
+  padding-left: 2rem;
+}
+
+.fa-envelope:hover{
+  color: #EA4335;
 }
 
 /* Screen Adjustment */
@@ -48,9 +82,5 @@ body{
 }
 
 @media only screen and (max-device-width: 3000px){
-  .contacts{
-    position: absolute;
-    margin-left: 47%;
-    margin-top: -6%;
-  }
+  /*  */
 }
