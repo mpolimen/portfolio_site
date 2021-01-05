@@ -1,17 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 *{
   box-sizing: border-box;
   margin: 0;
 }
 
 body{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Nunito', sans-serif;
   background: url(images/backgrounds/dotted_circle.PNG) repeat; 
   background-size: 10%;
   background-color: #3e3e3e;
+  margin: 0;
+  color: white;
 }
 
+/* Nav Bar */
+nav{
+  position: relative;
+  background-color: rgba(122, 122, 122, 0.35);
+  height: 10rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 0px 0px 35px 35px;
+}
+
+.nav_elems{
+  position: absolute;
+  top: 2.5rem;
+  margin-left: 10rem;
+  display: inline-block;
+  float: none;
+}
+
+.nav_elems img{
+  margin-left: 10rem;
+  -webkit-filter: brightness(100%);
+	-moz-filter: brightness(100%);
+	-o-filter: brightness(100%);
+	-ms-filter: brightness(100%);
+	filter: brightness(100%);
+}
+
+.nav_elems img:hover{
+  -webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	filter: brightness(70%);
+}
+
+#current_page{
+  -webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	filter: brightness(70%);
+}
+
+/* Introduction Box */
 .introduction{
-  margin-top: 7.5rem;
+  margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -19,57 +66,140 @@ body{
 }
 
 .intro_box{
-  content: url(images/figma_exports/intro_bw.svg);
-}
-
-.intro_box:hover{
-  content: url(images/figma_exports/intro_color.svg);
+  content: url(images/figma_exports/intro.svg);
 }
 
 .me{
   position: absolute;
   left: 0.2rem;
   top: -0.1rem;
-  mix-blend-mode: luminosity;
 }
 
-.me:hover{
-  mix-blend-mode: normal;
+.me img{
+  border-radius: 25px 0px 0px 25px;
 }
 
+/* Contacts */
 .contacts{
   position: absolute;
-  left: 25rem;
+  left: 23rem;
   bottom: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.fa-linkedin{
-  color: white;
+.contacts i{
+  -webkit-filter: brightness(100%);
+	-moz-filter: brightness(100%);
+	-o-filter: brightness(100%);
+	-ms-filter: brightness(100%);
+  filter: brightness(100%);
+  margin-left: 2rem;
 }
 
-.fa-linkedin:hover{
+.contacts i:hover{
+  -webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	filter: brightness(70%);
+}
+
+.fa-linkedin{
   color: #5292DC;
 }
 
 .fa-github{
-  color: white;
-  padding-left: 2rem;
-}
-
-.fa-github:hover{
   color: #DBBC4A;
 }
 
 .fa-envelope{
-  color: white;
-  padding-left: 2rem;
+  color: #D8464C;
 }
 
-.fa-envelope:hover{
-  color: #D8464C;
+/* Projects */
+#oops{
+  margin-left: 20rem;
+  font-size: 24px;
+}
+
+/* About me */
+.about_me{
+  font-size: 24px;
+  width: 55rem;
+  margin-top: 2rem;
+  margin-left: 7.5rem;
+  color: white;
+}
+
+#stevens{
+  color: #5894D6;
+  text-decoration: underline;
+}
+
+#stevens_img{
+  display: none;
+  width: 20%;
+  position: fixed; /* Floating above */
+  transition: transform 0.23s; /* Sticking effect */
+  pointer-events: none /* Allow clicking trough the div */
+}
+
+#stevens:hover + #stevens_img{
+  display: block;
+}
+
+#resume a:visited, #resume a{
+  color: #5894D6;
+  text-decoration: underline;
+}
+
+#resume_src{
+  display: none;
+  width: 25%;
+  height: 75%;
+  position: fixed; /* Floating above */
+  transition: transform 0.23s; /* Sticking effect */
+  pointer-events: none /* Allow clicking trough the div */
+}
+
+#resume:hover + #resume_src{
+  display: block;
+}
+
+#scsc{
+  color: #5894D6;
+  text-decoration: underline;
+}
+
+#scsc_img{
+  display: none;
+  width: 20%;
+  position: fixed; /* Floating above */
+  transition: transform 0.23s; /* Sticking effect */
+  pointer-events: none /* Allow clicking trough the div */
+}
+
+#scsc:hover + #scsc_img{
+  display: block;
+}
+
+#sigep{
+  color: #5894D6;
+  text-decoration: underline;
+}
+
+#sigep_img{
+  display: none;
+  height: 50%;
+  position: fixed; /* Floating above */
+  transition: transform 0.23s; /* Sticking effect */
+  pointer-events: none /* Allow clicking trough the div */
+}
+
+#sigep:hover + #sigep_img{
+  display: block;
 }
 
 /* Screen Adjustment */
