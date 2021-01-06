@@ -21,6 +21,8 @@ nav{
   height: 10rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 0px 0px 35px 35px;
+  width: 100%;
+  min-width: 75rem;
 }
 
 .nav_elems{
@@ -125,28 +127,74 @@ nav{
 }
 
 /* About me */
+.about_me_wrapper{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
 .about_me{
   font-size: 24px;
-  width: 55rem;
+  width: 50rem;
+  min-width: 45rem;
   margin-top: 2rem;
   margin-left: 7.5rem;
   color: white;
 }
 
-#stevens{
+.about_me b{
+  color: #dbbc4a;
+}
+
+.about_me span{
   color: #5894D6;
   text-decoration: underline;
 }
 
-#stevens_img{
+.about_me img{
   display: none;
-  width: 20%;
   position: fixed; /* Floating above */
   transition: transform 0.23s; /* Sticking effect */
-  pointer-events: none /* Allow clicking trough the div */
+  pointer-events: none; /* Allow clicking trough the div */
+}
+
+#stevens_img{
+  width: 20%;
 }
 
 #stevens:hover + #stevens_img{
+  display: block;
+}
+
+#scsc_img{
+  width: 20%;
+}
+
+#scsc:hover + #scsc_img{
+  display: block;
+}
+
+#sigep_img{
+  height: 50%;
+}
+
+#sigep:hover + #sigep_img{
+  display: block;
+}
+
+#blackrock_img{
+  width: 20%;
+}
+
+#blackrock:hover + #blackrock_img{
+  display: block;
+}
+
+#xc_img{
+  width: 20%;
+}
+
+#xc:hover + #xc_img{
   display: block;
 }
 
@@ -168,42 +216,30 @@ nav{
   display: block;
 }
 
-#scsc{
-  color: #5894D6;
-  text-decoration: underline;
+/* Gallery */
+.gallery{
+  text-align:center;
+  top: 1rem;
+  margin-right: 1rem;
+  width: 24rem;
+  position: relative;
+  z-index: -50;
 }
 
-#scsc_img{
-  display: none;
-  width: 20%;
-  position: fixed; /* Floating above */
-  transition: transform 0.23s; /* Sticking effect */
-  pointer-events: none /* Allow clicking trough the div */
+.gallery_photos{
+  list-style: none;
+  position: absolute;
+  padding-left: .5rem;
 }
 
-#scsc:hover + #scsc_img{
-  display: block;
-}
-
-#sigep{
-  color: #5894D6;
-  text-decoration: underline;
-}
-
-#sigep_img{
-  display: none;
-  height: 50%;
-  position: fixed; /* Floating above */
-  transition: transform 0.23s; /* Sticking effect */
-  pointer-events: none /* Allow clicking trough the div */
-}
-
-#sigep:hover + #sigep_img{
-  display: block;
+.gallery_photos li img{
+  max-width: 22rem;
+  max-height: 17rem;
+  border-radius: 15px;
 }
 
 /* Screen Adjustment */
-@media only screen and (min-device-width: 999px){
+@media only screen and (max-device-width: 600px){
   /*  */
 }
 
@@ -211,6 +247,6 @@ nav{
   /*  */
 }
 
-@media only screen and (max-device-width: 3000px){
+@media only screen and (min-device-width: 3000px){
   /*  */
 }

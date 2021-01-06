@@ -15,4 +15,10 @@ document.addEventListener('mousemove', function(ev){
 
   document.getElementById('sigep_img').style.transform = 'translateY('+(ev.clientY-850)+'px)';
   document.getElementById('sigep_img').style.transform += 'translateX('+(ev.clientX-100)+'px)';
+
+  document.getElementById('blackrock_img').style.transform = 'translateY('+(ev.clientY-750)+'px)';
+  document.getElementById('blackrock_img').style.transform += 'translateX('+(ev.clientX-100)+'px)';
+
+  document.getElementById('xc_img').style.transform = 'translateY('+(ev.clientY-1050)+'px)';
+  document.getElementById('xc_img').style.transform += 'translateX('+(ev.clientX-100)+'px)';
 },false);
